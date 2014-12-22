@@ -14,7 +14,7 @@
     {% if page.is_current_or_ascendant %}
     {% if page.is_current %}
     <li id="breadcrumb-menu-{{ page.html_id }}"
-        class="active">{{ page.title }}</li>
+        class="active">{% trans page.title %}</li>
     {% else %}
     <li id="breadcrumb-menu-{{ page.html_id }}">
         <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
