@@ -4,6 +4,10 @@ version: 1
 api: version
 threadsafe: true
 
+handlers:
+- url: .*
+  script: luna.wsgi.application
+
 libraries:
 - name: jinja2
   version: "2.6"
