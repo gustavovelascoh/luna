@@ -1,0 +1,16 @@
+application: luna-morada
+runtime: python3
+version: 1
+api: version
+threadsafe: true
+
+libraries:
+- name: jinja2
+  version: "2.6"
+- name: markupsafe
+  version: "0.15"
+- name: django
+  version: "1.7"
+
+builtins:
+- django_wsgi: on
